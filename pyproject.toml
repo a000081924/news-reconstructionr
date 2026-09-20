@@ -1,0 +1,45 @@
+[project]
+name = "news-reconstruction"
+version = "0.1.0"
+description = "Layout-aware reconstruction of historical Chinese newspaper scans"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.141.1",
+    "pillow>=12.3.0",
+    "python-multipart>=0.0.32",
+    "setuptools>=84.0.0",
+    "uvicorn>=0.53.0",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "nvidia-cudnn-cu11==8.9.5.29 ; sys_platform == 'win32'",
+    "paddleocr[doc-parser]==3.7.0",
+    "paddlepaddle-gpu==3.2.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/newsrec"]
+
+# paddlepaddle-gpu is not on PyPI; cu118 matches driver 537.42 (CUDA 12.2)
+[[tool.uv.index]]
+name = "paddle-cu118"
+url = "https://www.paddlepaddle.org.cn/packages/stable/cu118/"
+explicit = true
+
+[tool.uv.sources]
+paddlepaddle-gpu = { index = "paddle-cu118" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "httpx>=0.28.1",
+]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

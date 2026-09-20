@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Generated
+out/
+data/
+*.log
+.playwright-mcp/
+
+# Transient benchmark summaries (consolidated evidence is in bench/results.json)
+bench/*.result.json
+.pytest_cache/
+pytest-cache-files-*/
+node_modules/
+.svelte-kit/
+
+# Dropped scans and their cached recognition: SQLite metadata + image blobs,
+# keyed by content hash. Local only -- never commit someone else's newspaper.
+.runtime/
