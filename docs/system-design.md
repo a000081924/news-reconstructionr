@@ -79,3 +79,16 @@ Four tiers interact. In the browser, `api.ts` is the only module aware of backen
 
 One page per document, no authentication, no multi-user support, and no cancelling a queued job. Dense-body column merging is unsolved and remains the largest accuracy lever.
 
+## 7. Version control and traceability
+
+Starting from an empty repository, the first two commits are bookkeeping. One preserves the original prototype and its benchmarks so later work has something to diff against; the second removes the template scaffold. Both are labelled `chore:`, because neither adds behaviour.
+
+`master` is the only long-lived branch. A change starts on a short-lived branch and merges back once `uv run pytest` and `bun test` pass, which keeps the trunk releasable and stops any one merge from spanning half the codebase. This repository has a single author, so the result is linear: eleven commits, no merge commits.
+
+Each commit is a slice that leaves the tree working, and their order follows the dependency direction the design already imposes. `feat(core)` lands the domain, repository and service layers, `feat(api)` puts the FastAPI tier on top, and `feat(frontend)` comes last. Because `domain` imports only the standard library and Paddle stays behind one module, every one of those commits passes its tests on a machine with no GPU.
+
+Messages follow Conventional Commits with the layer as the scope: `feat(core)`, `feat(api)`, `feat(bench)` and `feat(frontend)`, alongside `docs`, `chore` and `fix`. The scope is what lets `git log -- src/newsrec/api` read as that tier's own history.
+
+Documentation stays consistent because it lives beside the code and moves in the same commit. Where only the prose changed, the README rewrites are their own `docs:` commits. The architecture diagram is committed as Excalidraw JSON, which is text and therefore diffs and merges; the PNG is a rendering of it. `schemas/page.schema.json` sits beside the Pydantic model it describes, so a contract change and its schema cannot drift apart.
+
+Traceability runs through committed evidence. Performance and accuracy claims cite `bench/results.json`, `bench/api-verification.json` and `bench/ground-truth.json`, so a reviewer can open the file and check the number. `.gitignore` drops the transient per-run summaries and keeps the consolidated ones. The requirement ids in this document are stable, so a commit can cite FR-8 and `git log --grep` will find it. That same ignore file enforces NFR-8: `.runtime/` and `data/` never enter history, so no scanned newspaper reaches version control.
