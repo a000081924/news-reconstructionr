@@ -1,0 +1,7 @@
+import { expect, test } from 'bun:test';
+import { drawText, fitRuns } from './layout';
+test('vertical runs fit validated per-run count at a boundary', () => { const fit = fitRuns(21, 20, 100, true); expect(fit.size).toBeGreaterThan(8); expect(Math.ceil(21 / fit.per) * fit.size).toBeLessThanOrEqual(20.000001); expect(fit.per * fit.size).toBeLessThanOrEqual(100.000001); });
+test('explicit vertical columns advance right to left', () => { const glyphs = drawText('天地\n玄黃', [0, 0, 20, 40]); expect(glyphs.map(g => [g.x, g.y])).toEqual([[10, 0], [10, 10], [0, 0], [0, 10]]); });
+test('horizontal runs advance left to right and preserve unicode codepoints', () => { const glyphs = drawText('𠀀文', [0, 0, 40, 20]); expect(glyphs).toHaveLength(2); expect(glyphs[0].character).toBe('𠀀'); expect(glyphs[1].x).toBeCloseTo(20); });
+test('empty, invalid, and sub-three-pixel text is omitted', () => { expect(drawText(' ', [0,0,20,20])).toEqual([]); expect(drawText('字', [0,0,2,2])).toEqual([]); expect(fitRuns(2, 0, 2, true).size).toBe(0); });
+test('all generated cells stay inside the box across text lengths', () => { for (let n = 1; n < 150; n++) for (const [w,h] of [[31,97],[97,31]]) for (const g of drawText('字'.repeat(n), [10,20,10+w,20+h])) { expect(g.x).toBeGreaterThanOrEqual(9.99999); expect(g.y).toBeGreaterThanOrEqual(19.99999); expect(g.x+g.size).toBeLessThanOrEqual(10+w+0.00001); expect(g.y+g.size).toBeLessThanOrEqual(20+h+0.00001); } });
