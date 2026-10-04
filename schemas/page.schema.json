@@ -1,0 +1,153 @@
+{
+  "$defs": {
+    "BlockResponse": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "order": {
+          "title": "Order",
+          "type": "integer"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "lines": {
+          "items": {
+            "$ref": "#/$defs/LineResponse"
+          },
+          "title": "Lines",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "order",
+        "label",
+        "bbox",
+        "text",
+        "lines"
+      ],
+      "title": "BlockResponse",
+      "type": "object"
+    },
+    "LineResponse": {
+      "properties": {
+        "bbox": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox",
+          "type": "array"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "bbox",
+        "text",
+        "score"
+      ],
+      "title": "LineResponse",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "engine": {
+      "title": "Engine",
+      "type": "string"
+    },
+    "width": {
+      "exclusiveMinimum": 0,
+      "title": "Width",
+      "type": "integer"
+    },
+    "height": {
+      "exclusiveMinimum": 0,
+      "title": "Height",
+      "type": "integer"
+    },
+    "image": {
+      "title": "Image",
+      "type": "string"
+    },
+    "angle": {
+      "enum": [
+        0,
+        90
+      ],
+      "title": "Angle",
+      "type": "integer"
+    },
+    "blocks": {
+      "items": {
+        "$ref": "#/$defs/BlockResponse"
+      },
+      "title": "Blocks",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "engine",
+    "width",
+    "height",
+    "image",
+    "angle",
+    "blocks"
+  ],
+  "title": "PageResponse",
+  "type": "object"
+}
