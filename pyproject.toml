@@ -14,7 +14,13 @@ dependencies = [
 
 [project.optional-dependencies]
 gpu = [
-    "nvidia-cudnn-cu11==8.9.5.29 ; sys_platform == 'win32'",
+    "nvidia-cuda-runtime-cu12==12.9.37 ; sys_platform == 'win32'",
+    "nvidia-cudnn-cu12==9.9.0.52 ; sys_platform == 'win32'",
+    "nvidia-cublas-cu12==12.9.0.13 ; sys_platform == 'win32'",
+    "nvidia-cufft-cu12==11.4.0.6 ; sys_platform == 'win32'",
+    "nvidia-curand-cu12==10.3.10.19 ; sys_platform == 'win32'",
+    "nvidia-cusolver-cu12==11.7.4.40 ; sys_platform == 'win32'",
+    "nvidia-cusparse-cu12==12.5.9.5 ; sys_platform == 'win32'",
     "paddleocr[doc-parser]==3.7.0",
     "paddlepaddle-gpu==3.2.2",
 ]
@@ -28,12 +34,12 @@ packages = ["src/newsrec"]
 
 # paddlepaddle-gpu is not on PyPI; cu118 matches driver 537.42 (CUDA 12.2)
 [[tool.uv.index]]
-name = "paddle-cu118"
-url = "https://www.paddlepaddle.org.cn/packages/stable/cu118/"
+name = "paddle-cu129"
+url = "https://www.paddlepaddle.org.cn/packages/stable/cu129/"
 explicit = true
 
 [tool.uv.sources]
-paddlepaddle-gpu = { index = "paddle-cu118" }
+paddlepaddle-gpu = { index = "paddle-cu129" }
 
 [dependency-groups]
 dev = [

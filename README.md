@@ -20,10 +20,37 @@ control.
 uv sync                      # API and tests; no GPU, no Paddle
 uv sync --extra gpu          # adds paddleocr + paddlepaddle-gpu (cu118)
 
-cd frontend && bun install && bun run build && cd ..
+cd frontend                  # skip the build and / answers 404
+bun install
+bun run build
+cd ..
 uv run --extra gpu uvicorn newsrec.api.app:app --port 8000
 # http://127.0.0.1:8000/   — serves the built frontend from the same origin
 ```
+
+Without a CUDA GPU, drop the `--extra gpu` and start with `NEWSREC_ENGINE=none`. The default
+preloads an engine during startup, so an install without Paddle exits on `ModuleNotFoundError:
+No module named 'paddleocr'` rather than coming up recognition-less.
+
+Windows defaults to PowerShell 5.1, which has neither `&&` nor the `VAR=value cmd` prefix, so
+the variables go on their own line:
+
+```powershell
+$env:NEWSREC_ENGINE = "none"
+uv run uvicorn newsrec.api.app:app --port 8000
+```
+
+`cmd.exe` wants `set NEWSREC_ENGINE=none` instead. Nothing else about the platform needs
+handling: `uv sync --extra gpu` resolves the cu118 wheels and the pinned `nvidia-cudnn-cu11`,
+and `build_pipeline` registers their DLL directory before constructing an engine, so no
+system-wide CUDA or cuDNN install is involved.
+
+The first start on a real engine downloads its models: about 430 MB over six models for
+`structure`, another 11 MB if you also pick `cht`, and 1.8 GB for `parse.py vl`. PaddleX caches
+them in `~/.paddlex/official_models` — `%USERPROFILE%\.paddlex` on Windows, moved by
+`PADDLE_PDX_CACHE_HOME` — outside the repository, and fetches from
+`paddle-model-ecology.bj.bcebos.com` with HuggingFace and AIStudio as fallbacks. Every timing
+below is measured against that cache already warm.
 
 For frontend work, `bun run dev` proxies the API to `127.0.0.1:8000`.
 
@@ -126,7 +153,7 @@ uv run --extra gpu normalize.py vl                       # -> out/vl/page.json
 ## Tests
 
 ```bash
-uv run pytest                              # 12 tests, no GPU required
+uv run pytest                              # 13 tests, no GPU required
 cd frontend && bun test && bun run check   # pure layout tests, no DOM stubs
 ```
 
