@@ -1,0 +1,1343 @@
+{
+  "provenance": "Visually transcribed by the coding assistant from the source scan crops on 2026-09-17; not independently human-reviewed. Pilot sample, not full-page ground truth.",
+  "results": [
+    {
+      "config": "cht_srvdet",
+      "construct_s": 10.72,
+      "predict_s": 26.99,
+      "cer": 0.7557251908396947,
+      "errors": 198,
+      "reference_characters": 262,
+      "line_recall_iou_0_5": 0.41379310344827586,
+      "matched_lines": 12,
+      "sampled_lines": 29,
+      "simplified_probe_counts": {
+        "国": 0,
+        "华": 0,
+        "军": 0,
+        "务": 0,
+        "台": 1
+      },
+      "details": [
+        {
+          "sample": "headline-1",
+          "reference": "美國務院宣佈杜總統薦",
+          "prediction": "美國務院宣怖杜總統萬",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "headline-2",
+          "reference": "哈利曼爲商部長",
+          "prediction": "公利島又為南部三",
+          "errors": 6,
+          "matched": true
+        },
+        {
+          "sample": "headline-3",
+          "reference": "將不過問外交政策",
+          "prediction": "將不過門外交政策",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-1",
+          "reference": "【中央社廣州廿三日電】",
+          "prediction": "氣中火社廣州女三日電",
+          "errors": 4,
+          "matched": true
+        },
+        {
+          "sample": "veterans-2",
+          "reference": "整編六十三，六十四，",
+          "prediction": "梁爆六十三）犬十四丶",
+          "errors": 5,
+          "matched": true
+        },
+        {
+          "sample": "veterans-3",
+          "reference": "四十師復員士兵共一千",
+          "prediction": "以十師複員士兵共一千",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-4",
+          "reference": "七百餘人，行將離穗榮",
+          "prediction": "七百餘人丶行將離穗來",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-5",
+          "reference": "歸鄉里，粵各界今上午",
+          "prediction": "麟鄉思了寧各界分上午",
+          "errors": 5,
+          "matched": true
+        },
+        {
+          "sample": "veterans-6",
+          "reference": "十時在中山紀念堂舉行",
+          "prediction": "於時在中山紀念堂舉行",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-7",
+          "reference": "歡送大會。",
+          "prediction": "概送大會力",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "notice-title",
+          "reference": "謝雨光啓事",
+          "prediction": "",
+          "errors": 5,
+          "matched": false
+        },
+        {
+          "sample": "notice-closing-1",
+          "reference": "敬希",
+          "prediction": "蘭希",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-2",
+          "reference": "鑒諒是荷",
+          "prediction": "鐵龍是荷",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "config": "lean",
+      "construct_s": 10.9,
+      "predict_s": 29.0,
+      "cer": 0.6793893129770993,
+      "errors": 178,
+      "reference_characters": 262,
+      "line_recall_iou_0_5": 0.41379310344827586,
+      "matched_lines": 12,
+      "sampled_lines": 29,
+      "simplified_probe_counts": {
+        "国": 7,
+        "华": 2,
+        "军": 1,
+        "务": 0,
+        "台": 6
+      },
+      "details": [
+        {
+          "sample": "headline-1",
+          "reference": "美國務院宣佈杜總統薦",
+          "prediction": "美國務院宣布杜總統薦",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "headline-2",
+          "reference": "哈利曼爲商部長",
+          "prediction": "利曼爲商部",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "headline-3",
+          "reference": "將不過問外交政策",
+          "prediction": "將不過問外交政策",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-1",
+          "reference": "【中央社廣州廿三日電】",
+          "prediction": "中火社廣州廿三日電】",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-2",
+          "reference": "整編六十三，六十四，",
+          "prediction": "整号六十三，六十四，",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-3",
+          "reference": "四十師復員士兵共一千",
+          "prediction": "四十師復員士兵共一千",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-4",
+          "reference": "七百餘人，行將離穗榮",
+          "prediction": "七百餘人，行將離茶",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-5",
+          "reference": "歸鄉里，粵各界今上午",
+          "prediction": "歸鄉里，廖各界今上午",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-6",
+          "reference": "十時在中山紀念堂舉行",
+          "prediction": "十時在中山纪念堂舉行",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-7",
+          "reference": "歡送大會。",
+          "prediction": "歡大會。",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-title",
+          "reference": "謝雨光啓事",
+          "prediction": "",
+          "errors": 5,
+          "matched": false
+        },
+        {
+          "sample": "notice-closing-1",
+          "reference": "敬希",
+          "prediction": "麓希",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-2",
+          "reference": "鑒諒是荷",
+          "prediction": "鑑諒是荷",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "config": "mrec_srvdet",
+      "construct_s": 9.4,
+      "predict_s": 23.77,
+      "cer": 0.7251908396946565,
+      "errors": 190,
+      "reference_characters": 262,
+      "line_recall_iou_0_5": 0.41379310344827586,
+      "matched_lines": 12,
+      "sampled_lines": 29,
+      "simplified_probe_counts": {
+        "国": 18,
+        "华": 3,
+        "军": 0,
+        "务": 0,
+        "台": 6
+      },
+      "details": [
+        {
+          "sample": "headline-1",
+          "reference": "美國務院宣佈杜總統薦",
+          "prediction": "美國務院宣饰杜總統薦",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "headline-2",
+          "reference": "哈利曼爲商部長",
+          "prediction": "和商部",
+          "errors": 5,
+          "matched": true
+        },
+        {
+          "sample": "headline-3",
+          "reference": "將不過問外交政策",
+          "prediction": "將不過問外交政策",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-1",
+          "reference": "【中央社廣州廿三日電】",
+          "prediction": "【中火社廣州廿三日電】",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-2",
+          "reference": "整編六十三，六十四，",
+          "prediction": "魏六十三六十四，",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-3",
+          "reference": "四十師復員士兵共一千",
+          "prediction": "四十師復目兵共一千",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-4",
+          "reference": "七百餘人，行將離穗榮",
+          "prediction": "七百人，行特菜",
+          "errors": 5,
+          "matched": true
+        },
+        {
+          "sample": "veterans-5",
+          "reference": "歸鄉里，粵各界今上午",
+          "prediction": "歸鄉里，粤各界今上午",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-6",
+          "reference": "十時在中山紀念堂舉行",
+          "prediction": "十时在中山起念堂行",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-7",
+          "reference": "歡送大會。",
+          "prediction": "颗送大會。",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-title",
+          "reference": "謝雨光啓事",
+          "prediction": "",
+          "errors": 5,
+          "matched": false
+        },
+        {
+          "sample": "notice-closing-1",
+          "reference": "敬希",
+          "prediction": "龍希",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-2",
+          "reference": "鑒諒是荷",
+          "prediction": "是荷",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "config": "v6_medium",
+      "construct_s": 30.63,
+      "predict_s": 21.7,
+      "cer": 0.8587786259541985,
+      "errors": 225,
+      "reference_characters": 262,
+      "line_recall_iou_0_5": 0.41379310344827586,
+      "matched_lines": 12,
+      "sampled_lines": 29,
+      "simplified_probe_counts": {
+        "国": 0,
+        "华": 0,
+        "军": 0,
+        "务": 32,
+        "台": 3
+      },
+      "details": [
+        {
+          "sample": "headline-1",
+          "reference": "美國務院宣佈杜總統薦",
+          "prediction": "房创务育房府务前养",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "headline-2",
+          "reference": "哈利曼爲商部長",
+          "prediction": "房堂房务贸",
+          "errors": 7,
+          "matched": true
+        },
+        {
+          "sample": "headline-3",
+          "reference": "將不過問外交政策",
+          "prediction": "房和安局",
+          "errors": 8,
+          "matched": true
+        },
+        {
+          "sample": "veterans-1",
+          "reference": "【中央社廣州廿三日電】",
+          "prediction": "中火社廣州廿三日電",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-2",
+          "reference": "整編六十三，六十四，",
+          "prediction": "整耦六十三六十四",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-3",
+          "reference": "四十師復員士兵共一千",
+          "prediction": "四十師復員士兵共一千",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-4",
+          "reference": "七百餘人，行將離穗榮",
+          "prediction": "七百餘人行將離總",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-5",
+          "reference": "歸鄉里，粵各界今上午",
+          "prediction": "厨会分",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "veterans-6",
+          "reference": "十時在中山紀念堂舉行",
+          "prediction": "才民司",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "veterans-7",
+          "reference": "歡送大會。",
+          "prediction": "房及成价",
+          "errors": 5,
+          "matched": true
+        },
+        {
+          "sample": "notice-title",
+          "reference": "謝雨光啓事",
+          "prediction": "謝南光啓事",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-1",
+          "reference": "敬希",
+          "prediction": "",
+          "errors": 2,
+          "matched": false
+        },
+        {
+          "sample": "notice-closing-2",
+          "reference": "鑒諒是荷",
+          "prediction": "統希鑑諒是荷",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "config": "v6_small",
+      "construct_s": 19.83,
+      "predict_s": 20.66,
+      "cer": 0.683206106870229,
+      "errors": 179,
+      "reference_characters": 262,
+      "line_recall_iou_0_5": 0.41379310344827586,
+      "matched_lines": 12,
+      "sampled_lines": 29,
+      "simplified_probe_counts": {
+        "国": 3,
+        "华": 0,
+        "军": 0,
+        "务": 0,
+        "台": 8
+      },
+      "details": [
+        {
+          "sample": "headline-1",
+          "reference": "美國務院宣佈杜總統薦",
+          "prediction": "美國務院宣佈杜總統薦",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "headline-2",
+          "reference": "哈利曼爲商部長",
+          "prediction": "",
+          "errors": 7,
+          "matched": false
+        },
+        {
+          "sample": "headline-3",
+          "reference": "將不過問外交政策",
+          "prediction": "將不過問外交政策",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-1",
+          "reference": "【中央社廣州廿三日電】",
+          "prediction": "中火社廣州廿三日電",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-2",
+          "reference": "整編六十三，六十四，",
+          "prediction": "整六十三，六十四",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-3",
+          "reference": "四十師復員士兵共一千",
+          "prediction": "四十師復員士兵共一千",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-4",
+          "reference": "七百餘人，行將離穗榮",
+          "prediction": "七百餘人行將離穗茶",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-5",
+          "reference": "歸鄉里，粵各界今上午",
+          "prediction": "歸鄉里粵各界今上午",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-6",
+          "reference": "十時在中山紀念堂舉行",
+          "prediction": "十時在中山紀念堂舉行",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "veterans-7",
+          "reference": "歡送大會。",
+          "prediction": "歡送大會",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-title",
+          "reference": "謝雨光啓事",
+          "prediction": "謝南光啓事",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-1",
+          "reference": "敬希",
+          "prediction": "麓希",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-2",
+          "reference": "鑒諒是荷",
+          "prediction": "鑑諒是荷",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-upper-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-1",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-2",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-4",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-5",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-6",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-7",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "config": "v6_tiny",
+      "construct_s": 18.67,
+      "predict_s": 9.0,
+      "cer": 0.7595419847328244,
+      "errors": 199,
+      "reference_characters": 262,
+      "line_recall_iou_0_5": 0.8620689655172413,
+      "matched_lines": 25,
+      "sampled_lines": 29,
+      "simplified_probe_counts": {
+        "国": 5,
+        "华": 1,
+        "军": 1,
+        "务": 0,
+        "台": 9
+      },
+      "details": [
+        {
+          "sample": "headline-1",
+          "reference": "美國務院宣佈杜總統薦",
+          "prediction": "美國務院宣怖杜觀統薦",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "headline-2",
+          "reference": "哈利曼爲商部長",
+          "prediction": "",
+          "errors": 7,
+          "matched": false
+        },
+        {
+          "sample": "headline-3",
+          "reference": "將不過問外交政策",
+          "prediction": "",
+          "errors": 8,
+          "matched": false
+        },
+        {
+          "sample": "veterans-1",
+          "reference": "【中央社廣州廿三日電】",
+          "prediction": "中火社廣州十三日電",
+          "errors": 4,
+          "matched": true
+        },
+        {
+          "sample": "veterans-2",
+          "reference": "整編六十三，六十四，",
+          "prediction": "蜜魏六十三六十四，",
+          "errors": 3,
+          "matched": true
+        },
+        {
+          "sample": "veterans-3",
+          "reference": "四十師復員士兵共一千",
+          "prediction": "四十師復員士兵共一子",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-4",
+          "reference": "七百餘人，行將離穗榮",
+          "prediction": "七百餘人行將難魏茶",
+          "errors": 4,
+          "matched": true
+        },
+        {
+          "sample": "veterans-5",
+          "reference": "歸鄉里，粵各界今上午",
+          "prediction": "歸鄉里粵各界今上午",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "veterans-6",
+          "reference": "十時在中山紀念堂舉行",
+          "prediction": "時在中山紀念堂晷行",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "veterans-7",
+          "reference": "歡送大會。",
+          "prediction": "歡送大會。",
+          "errors": 0,
+          "matched": true
+        },
+        {
+          "sample": "notice-title",
+          "reference": "謝雨光啓事",
+          "prediction": "南光路",
+          "errors": 4,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-1",
+          "reference": "敬希",
+          "prediction": "鐵希",
+          "errors": 1,
+          "matched": true
+        },
+        {
+          "sample": "notice-closing-2",
+          "reference": "鑒諒是荷",
+          "prediction": "鐵説是荷",
+          "errors": 2,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-1",
+          "reference": "??????????",
+          "prediction": "該委員會專負軍經",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-2",
+          "reference": "??????????",
+          "prediction": "·鄭動·平州器国回",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-3",
+          "reference": "??????????",
+          "prediction": "中·二二海蛋祖聯迎",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-4",
+          "reference": "??????????",
+          "prediction": "曲町牛指净",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-5",
+          "reference": "??????????",
+          "prediction": "河送灌家黑理韓",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-6",
+          "reference": "??????????",
+          "prediction": "偽主任委員委員測由",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-7",
+          "reference": "??????????",
+          "prediction": "樹食部長財政部英國",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-upper-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        },
+        {
+          "sample": "government-lower-1",
+          "reference": "??????????",
+          "prediction": "國防部晨開列名觀法",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-2",
+          "reference": "??????????",
+          "prediction": "川諾益·淋羅河司",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-3",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-4",
+          "reference": "??????????",
+          "prediction": "長聯合劭務副德司令",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-5",
+          "reference": "??????????",
+          "prediction": "各一人爲常務委員",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-6",
+          "reference": "??????????",
+          "prediction": "至各行藏殺靖公署職",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-7",
+          "reference": "??????????",
+          "prediction": "區之軍樹計核委員會組",
+          "errors": 10,
+          "matched": true
+        },
+        {
+          "sample": "government-lower-8",
+          "reference": "??????????",
+          "prediction": "",
+          "errors": 10,
+          "matched": false
+        }
+      ]
+    }
+  ]
+}

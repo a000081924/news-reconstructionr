@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "image": "台灣民報_25Sep1946_P.1.tif",
+  "provenance": "Visually transcribed by the coding assistant from the source scan crops on 2026-09-17; not independently human-reviewed. Pilot sample, not full-page ground truth.",
+  "sampling": "Four spatially separated strata: large international-news headline, one complete short veterans news item, public-notice heading/closing, and 16 physical text columns from two adjacent rows of dense government news. Column boxes follow the printed horizontal separator, not the detector merges. Legible regions selected visually; not a random/full-page sample.",
+  "normalization": "NFC and removal of whitespace only. Punctuation and historical/traditional character forms are retained.",
+  "samples": [
+    {
+      "id": "headline-1",
+      "region": "headline",
+      "bbox": [
+        4010,
+        315,
+        4135,
+        1315
+      ],
+      "text": "美國務院宣佈杜總統薦"
+    },
+    {
+      "id": "headline-2",
+      "region": "headline",
+      "bbox": [
+        3790,
+        445,
+        4005,
+        1805
+      ],
+      "text": "哈利曼爲商部長"
+    },
+    {
+      "id": "headline-3",
+      "region": "headline",
+      "bbox": [
+        3635,
+        765,
+        3790,
+        1815
+      ],
+      "text": "將不過問外交政策"
+    },
+    {
+      "id": "veterans-1",
+      "region": "news-body",
+      "bbox": [
+        4185,
+        2450,
+        4245,
+        2885
+      ],
+      "text": "【中央社廣州廿三日電】"
+    },
+    {
+      "id": "veterans-2",
+      "region": "news-body",
+      "bbox": [
+        4125,
+        2455,
+        4190,
+        2880
+      ],
+      "text": "整編六十三，六十四，"
+    },
+    {
+      "id": "veterans-3",
+      "region": "news-body",
+      "bbox": [
+        4070,
+        2455,
+        4135,
+        2885
+      ],
+      "text": "四十師復員士兵共一千"
+    },
+    {
+      "id": "veterans-4",
+      "region": "news-body",
+      "bbox": [
+        4010,
+        2455,
+        4070,
+        2885
+      ],
+      "text": "七百餘人，行將離穗榮"
+    },
+    {
+      "id": "veterans-5",
+      "region": "news-body",
+      "bbox": [
+        3950,
+        2450,
+        4020,
+        2880
+      ],
+      "text": "歸鄉里，粵各界今上午"
+    },
+    {
+      "id": "veterans-6",
+      "region": "news-body",
+      "bbox": [
+        3885,
+        2450,
+        3965,
+        2885
+      ],
+      "text": "十時在中山紀念堂舉行"
+    },
+    {
+      "id": "veterans-7",
+      "region": "news-body",
+      "bbox": [
+        3835,
+        2450,
+        3900,
+        2670
+      ],
+      "text": "歡送大會。"
+    },
+    {
+      "id": "notice-title",
+      "region": "notice",
+      "bbox": [
+        4715,
+        5140,
+        4870,
+        5790
+      ],
+      "text": "謝雨光啓事"
+    },
+    {
+      "id": "notice-closing-1",
+      "region": "notice",
+      "bbox": [
+        4435,
+        5140,
+        4520,
+        5315
+      ],
+      "text": "敬希"
+    },
+    {
+      "id": "notice-closing-2",
+      "region": "notice",
+      "bbox": [
+        4440,
+        5330,
+        4520,
+        5605
+      ],
+      "text": "鑒諒是荷"
+    },
+    {
+      "id": "government-upper-1",
+      "region": "dense-body",
+      "bbox": [
+        1960,
+        265,
+        2025,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-2",
+      "region": "dense-body",
+      "bbox": [
+        1905,
+        265,
+        1970,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-3",
+      "region": "dense-body",
+      "bbox": [
+        1850,
+        265,
+        1915,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-4",
+      "region": "dense-body",
+      "bbox": [
+        1790,
+        265,
+        1865,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-5",
+      "region": "dense-body",
+      "bbox": [
+        1735,
+        265,
+        1810,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-6",
+      "region": "dense-body",
+      "bbox": [
+        1680,
+        265,
+        1760,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-7",
+      "region": "dense-body",
+      "bbox": [
+        1625,
+        265,
+        1700,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-upper-8",
+      "region": "dense-body",
+      "bbox": [
+        1580,
+        265,
+        1645,
+        695
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-1",
+      "region": "dense-body",
+      "bbox": [
+        1960,
+        720,
+        2025,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-2",
+      "region": "dense-body",
+      "bbox": [
+        1905,
+        720,
+        1970,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-3",
+      "region": "dense-body",
+      "bbox": [
+        1850,
+        720,
+        1915,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-4",
+      "region": "dense-body",
+      "bbox": [
+        1790,
+        720,
+        1865,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-5",
+      "region": "dense-body",
+      "bbox": [
+        1735,
+        720,
+        1810,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-6",
+      "region": "dense-body",
+      "bbox": [
+        1680,
+        720,
+        1760,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-7",
+      "region": "dense-body",
+      "bbox": [
+        1625,
+        720,
+        1700,
+        1140
+      ],
+      "text": "??????????"
+    },
+    {
+      "id": "government-lower-8",
+      "region": "dense-body",
+      "bbox": [
+        1580,
+        720,
+        1645,
+        1140
+      ],
+      "text": "??????????"
+    }
+  ]
+}

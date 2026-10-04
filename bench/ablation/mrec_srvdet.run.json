@@ -1,0 +1,5 @@
+{
+  "config": "mrec_srvdet",
+  "construct_s": 9.4,
+  "predict_s": 23.77
+}

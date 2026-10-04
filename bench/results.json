@@ -1,0 +1,29 @@
+[
+ {
+  "config": "lean",
+  "construct_s": 9.0,
+  "cold_s": 32.2,
+  "warm_s": 29.5,
+  "blocks": 76,
+  "lines": 577,
+  "chars": 4762
+ },
+ {
+  "config": "cht_srvdet",
+  "construct_s": 7.7,
+  "cold_s": 20.8,
+  "warm_s": 19.7,
+  "blocks": 76,
+  "lines": 577,
+  "chars": 5551
+ },
+ {
+  "config": "mrec_srvdet",
+  "construct_s": 13.6,
+  "cold_s": 30.6,
+  "warm_s": 19.6,
+  "blocks": 76,
+  "lines": 579,
+  "chars": 4037
+ }
+]

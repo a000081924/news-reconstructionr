@@ -1,0 +1,32 @@
+[
+  {
+    "run": 1,
+    "construct_s": 10.68,
+    "upload_s": 0.78,
+    "stages_ms": {
+      "queued": null,
+      "started": null,
+      "preprocessed": 2451,
+      "layout": 3156,
+      "lines": 25377,
+      "done": 37597
+    },
+    "blocks": 77,
+    "lines": 577
+  },
+  {
+    "run": 2,
+    "construct_s": 10.68,
+    "upload_s": 1.51,
+    "stages_ms": {
+      "queued": null,
+      "started": null,
+      "preprocessed": 668,
+      "layout": 931,
+      "lines": 29925,
+      "done": 43344
+    },
+    "blocks": 77,
+    "lines": 577
+  }
+]
